@@ -14,7 +14,12 @@ const routes: Routes = [
     loadChildren: () => import('./sub/sub.module').then((m) => m.SubModule),
   },
   {
-    path: 'homeagain',
+    path: 'secondsub',
+    loadChildren: () =>
+      import('./secondsub/secondsub.module').then((m) => m.SecondsubModule),
+  },
+  {
+    path: 'home',
     component: HomeComponent,
   },
 ];

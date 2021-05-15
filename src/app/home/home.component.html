@@ -4,3 +4,8 @@
 <p>
   last post: <em>{{ lastItem }}</em>
 </p>
+
+<button (click)="addUser()">add user</button>
+<ul>
+  <li *ngFor="let u of usersService.user$ | async">{{ u }}</li>
+</ul>
